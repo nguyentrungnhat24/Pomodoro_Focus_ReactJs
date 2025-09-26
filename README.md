@@ -1,5 +1,7 @@
 # PomodoroFocus
 
+Tên sinh viên: Nguyễn Trung Nhật -22IT206
+
 A modern Pomodoro timer application built with React, TypeScript, and Capacitor for cross-platform functionality.
 
 ## Features
