@@ -1,0 +1,41 @@
+{
+  "name": "Pomodoro Focus",
+  "short_name": "Pomodoro",
+  "description": "Pomodoro Timer App that works in the background",
+  "theme_color": "#3F51B5",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Work Session",
+      "short_name": "Work",
+      "description": "Start a 25 minute work session",
+      "url": "/?mode=work",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Start Break",
+      "short_name": "Break",
+      "description": "Start a 5 minute break",
+      "url": "/?mode=break",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

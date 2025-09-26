@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PomodoroFocus</string>
+    <string name="title_activity_main">PomodoroFocus</string>
+    <string name="package_name">io.pomodoro.focus</string>
+    <string name="custom_url_scheme">io.pomodoro.focus</string>
+</resources>

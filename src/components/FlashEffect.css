@@ -1,0 +1,41 @@
+/* Hiệu ứng flash thay thế cho rung trên desktop - kéo dài 5 giây */
+@keyframes screenFlash {
+  0% { background-color: rgba(255, 255, 255, 0); }
+  10% { background-color: rgba(255, 255, 255, 0.9); }
+  20% { background-color: rgba(255, 255, 255, 0); }
+  30% { background-color: rgba(255, 255, 255, 0.9); }
+  40% { background-color: rgba(255, 255, 255, 0); }
+  50% { background-color: rgba(255, 255, 255, 0.9); }
+  60% { background-color: rgba(255, 255, 255, 0); }
+  70% { background-color: rgba(255, 255, 255, 0.9); }
+  80% { background-color: rgba(255, 255, 255, 0); }
+  90% { background-color: rgba(255, 255, 255, 0.9); }
+  100% { background-color: rgba(255, 255, 255, 0); }
+}
+
+/* Hiệu ứng flash phụ - chớp mạnh hơn */
+@keyframes intensiveFlash {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  20%, 24%, 55% {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+}
+
+.flash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 1;
+  animation: screenFlash 5s ease-out, intensiveFlash 1s ease-out 0s 5;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.flash-overlay.active {
+  display: block;
+}
